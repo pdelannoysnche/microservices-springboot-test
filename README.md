@@ -26,6 +26,16 @@ Fallback: If the service is unavailable, return a controlled message: "Inventory
 3. Error Management & Documentation
 Centralized Exception Handling: Implement a @RestControllerAdvice to manage standard HTTP errors (400 Bad Request, 404 Not Found, 500 Internal Error) with a consistent JSON response body.
 
+How to Run and Test
+Run the Infrastructure:
+
+Bash
+docker-compose up -d
+Build the Services:
+
+Bash
+./gradlew clean build
+
 API Documentation: Configure SpringDoc OpenAPI (Swagger). The documentation must be accessible at http://localhost:8080/swagger-ui.html.
 
 4. Logging & Configuration
